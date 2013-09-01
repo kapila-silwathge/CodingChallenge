@@ -1,15 +1,11 @@
 CodingChallenge
 ===============
 
+This create a one page web application displaying a short list of school results in tabular form filtered by either:
 
-Download and install MongoDB
+● Numeracy, Spelling or Reading
 
-Import  school.json to mongodb(database= codec, collection =school)
-
-Command
-
-mongoimport --db codec --collection school --file school.json  --jsonArray
-
+Filter is applied by selecting from a combobox list, resulting in a change of table content
 
 ##Technologies used
 
@@ -32,6 +28,25 @@ mongoimport --db codec --collection school --file school.json  --jsonArray
 ● GIT- Yes
 
 ● JBoss AS 7- Yes
+
+
+##To build
+you need to have maven installed
+run mvn package from the folder pom.xml exsits.
+IT creates folder "target" and it will have "codingchallenge.war" in it among others.
+
+##To Run
+#Dependancy
+MongoDB
+Internet Connection
+
+Download and install MongoDB
+
+Import  school.json to mongodb(database= codec, collection =school)
+
+Command
+
+mongoimport --db codec --collection school --file school.json  --jsonArray
 
 
 http://localhost:8080/codingchallenge
