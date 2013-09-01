@@ -9,19 +9,19 @@ Filter is applied by selecting from a combobox list, resulting in a change of ta
 
 ##Technologies Used
 
-● Java - Yes
+● Java - Yes (Spring Web,MVC)
 
-● Javascript- Yes
+● Javascript- Yes (Jquery,Underscore.js)
 
-● Javascript MV* Framework e.g. Backbone - Yes
+● Javascript MV* Framework - Yes (Backbone.js)
 
 ● JSON- Yes
 
 ● Bootstrap- Yes
 
-● RESTful- Yes
+● RESTful- Yes (Spring REST)
 
-● MongoDB- Yes
+● MongoDB- Yes (with Spring Data Mongo)
 
 ● Maven- Yes
 
