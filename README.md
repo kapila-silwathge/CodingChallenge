@@ -7,7 +7,7 @@ This create a one page web application displaying a short list of school results
 
 Filter is applied by selecting from a combobox list, resulting in a change of table content
 
-##Technologies used
+##Technologies Used
 
 ● Java - Yes
 
@@ -30,7 +30,7 @@ Filter is applied by selecting from a combobox list, resulting in a change of ta
 ● JBoss AS 7- Yes
 
 
-##To build
+##To Build
 you need to have maven installed to build this project.
 
 run 
@@ -74,7 +74,7 @@ mongoimport --db codec --collection school --file school.json  --jsonArray
 
 Internet connection is required while running the applicaton as application uses CDN to download some .js and .css files.
 
-###Deploy and run
+###Deploy and Run
 
 This was developed and tested  on JBoss AS 7.0.1 running standalone mode. you can copy the created .war file to ```<JbossHOME>/standalone/deployments``` folder and start the server.
 
