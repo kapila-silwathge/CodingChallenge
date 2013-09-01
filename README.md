@@ -99,4 +99,4 @@ To convert the Maven web project to support Eclipse IDE, in terminal, navigate t
 mvn eclipse:eclipse -Dwtpversion=2.0
 
 ```
-
+Developed with Eclipse Java EE IDE for Web Developers. Version: Kepler Release. Build id: 20130509-1105
