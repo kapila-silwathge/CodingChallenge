@@ -36,7 +36,7 @@ clone the project
 git clone https://github.com/kapila-silwathge/CodingChallenge.git
 ```
 
-you need to have maven installed to build this project.
+you need to have maven installed to build this project.(developed and tested with Apache Maven 3.1.0)
 
 run 
 ```
