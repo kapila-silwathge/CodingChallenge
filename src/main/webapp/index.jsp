@@ -21,20 +21,18 @@
 				 </div>
 				 <div class="row-fluid">		    
 				  <div class="slisttable span9"></div>
-				  <div class="span3">
-				  	 <div></div>
-					  <div class="span3">
-					      <h5>&nbsp;</h5>
-					      <label><i class="icon-search"></i><strong> Search Student</strong></label>
-					      <input type="text">
-					      <label><strong>Subject</strong></label>		        	
-					      <select class="selectpicker show-tick target" id="selectedsub" name="selectedsub">
-					      		<option value="numeracy" selected="selected">Numeracy</option>
-					      		<option value="spelling">Spelling</option>
-					      		<option value="reading">Reading</option>					
-							</select>
-					  </div>
+				  <div class="span1"></div>				 
+				  <div class="span3">				      
+				      <label><i class="icon-search"></i><strong> Search Student</strong></label>
+				      <input type="text">
+				      <label><strong>Subject</strong></label>		        	
+				      <select class="selectpicker show-tick target" id="selectedsub" name="selectedsub">
+				      		<option value="numeracy" selected="selected">Numeracy</option>
+				      		<option value="spelling">Spelling</option>
+				      		<option value="reading">Reading</option>					
+						</select>
 				  </div>
+				  
 				 </div>
 		        </div>
 	        </div>
