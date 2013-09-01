@@ -6,13 +6,9 @@
 	  <title>CingleVue Coding Challenge~Solution by Kapila Silwathge</title>
 	  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
 	  <link href="<c:url value='/resources/css/bootstrap-select.css'/>" rel="stylesheet">
-	  <!--  link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
-    
- 
+	  <link href="<c:url value='/resources/css/theme.default.css'/>" rel="stylesheet">
 	</head>
 	<body>
-	
-	
 	  <div class="container-fluid">
 		  <div class="row-fluid">	
 			  <div class="container-fluid">
@@ -31,8 +27,7 @@
 				      		<option value="spelling">Spelling</option>
 				      		<option value="reading">Reading</option>					
 						</select>
-				  </div>
-				  
+				  </div>				  
 				 </div>
 		        </div>
 	        </div>
@@ -42,6 +37,7 @@
 	  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js" type="text/javascript"></script>
 	  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
 	  <script type="text/javascript" src="<c:url value='/resources/js/bootstrap-select.js'/> "></script>
+	  <script type="text/javascript" src="<c:url value='/resources/js/jquery.tablesorter.min.js'/> "></script>
 	  
 	  <!--  script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script-->
       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
@@ -55,10 +51,10 @@
 	 	};
 	  	
 	  	
-	  </script>
+	  </script>	 
 	  <script type="text/template" id="school-list-template">
     	<h5><a href="" class="">Pines School District </a>/ <@= displaysub.valueOf() @> </h5>   	
-    	<table class="table table-striped table-condensed table-bordered">
+    	<table id="tableschool" class="table table-striped table-condensed table-bordered tablesorter">
       		<thead>
         		<tr>
           			<th>School</th>
@@ -110,10 +106,16 @@
 		            var template = _.template($('#school-list-template').html(), {schools: schools.models,displaysub:displaysub});
 		            that.$el.html(template);
 		            refresSelect();
+		           $("#tableschool").tablesorter(); 
 		          }
 		        })
 		      }
 		    });
+		  
+		  $("#tableschool").tablesorter({
+			    theme : 'bootstrap',
+			    ignoreCase : true
+			  });
 	  
 		  var schoolListView = new SchoolListView();
 	  
