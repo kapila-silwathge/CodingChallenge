@@ -47,7 +47,7 @@ It creates folder "target" and it will have "codingchallenge.war" in it among ot
 
 ####1.MongoDB
 
-need to have mongodb running to run the app with collection populated with data.
+need to have running Mongodb with  data populate to  run the applicaton.
 
 default values are
 ```
