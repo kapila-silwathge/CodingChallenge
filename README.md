@@ -10,7 +10,7 @@ Command
 mongoimport --db codec --collection school --file school.json  --jsonArray
 
 
-Technologies used
+##Technologies used
 ● Java - Yes
 ● Javascript- Yes
 ● Javascript MV* Framework e.g. Backbone - Yes
