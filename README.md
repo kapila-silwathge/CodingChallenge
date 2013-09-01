@@ -31,6 +31,11 @@ Filter is applied by selecting from a combobox list, resulting in a change of ta
 
 
 ##To Build
+clone the project
+```
+git clone https://github.com/kapila-silwathge/CodingChallenge.git
+```
+
 you need to have maven installed to build this project.
 
 run 
