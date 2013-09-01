@@ -32,30 +32,47 @@ Filter is applied by selecting from a combobox list, resulting in a change of ta
 
 ##To build
 you need to have maven installed
-run mvn package from the folder pom.xml exsits.
-IT creates folder "target" and it will have "codingchallenge.war" in it among others.
+
+run "mvn package" from the folder where pom.xml exsits.
+
+It creates folder "target" and it will have "codingchallenge.war" in it among others.
 
 ##To Run
-#Dependancy
-MongoDB
-Internet Connection
+###Dependancy
+
+####1.MongoDB
 
 Download and install MongoDB
 
-Import  school.json to mongodb(database= codec, collection =school)
+Import  school.json included with this to mongodb
+
+database= codec
+
+collection =school
+
 
 Command
 
 mongoimport --db codec --collection school --file school.json  --jsonArray
 
+####2.Internet Connection
+
+Internet connection is required while running the applicaton as application uses CDN to download some .js and .css files.
+
+###Deploy and run
+
+This was developed and tested  on JBoss AS 7.0.1 running standalone mode.you can coply the created .war file to <JbossHOME>/standalone/deployments folder and start the server.
+
+After .war is deployed open a browser and type
 
 http://localhost:8080/codingchallenge
 
 note: all simple ”codingchallenge”
 
-CDN are used for .css and .js files.
+##Eclipse IDE Support
 
 To convert the Maven web project to support Eclipse IDE, in terminal, navigate to “CodingChallenge” folder, issue this command :
+
 mvn eclipse:eclipse -Dwtpversion=2.0
 
 
